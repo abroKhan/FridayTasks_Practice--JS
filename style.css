@@ -74,12 +74,12 @@ body {
     border-radius: 50%;
 }
 
-.task__content .toggle.active .circle {
-    left: 15px;
+.task__content .toggle.active {
     background-color: #ffac13;
 }
 
-.task__content .toggle .circle.active {
+.task__content .toggle.active .circle {
+    left: 15px;
     background-color: #fff;
 }
 
