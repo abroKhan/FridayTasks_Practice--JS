@@ -81,6 +81,7 @@ body {
 
 .task__content .toggle .circle.active {
     left: 15px;
+    background-color: #fff;
 }
 
 @media (min-width : 550px) {
