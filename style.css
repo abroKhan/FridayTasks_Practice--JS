@@ -57,7 +57,7 @@ body {
 
 .task__content .toggle {
     position: relative;
-    width: 30px;
+    width: 35px;
     height: 12px;
     background: white;
     border-radius: 20px;
@@ -79,7 +79,7 @@ body {
 }
 
 .task__content .toggle.active .circle {
-    left: 15px;
+    left: 18px;
     background-color: #fff;
 }
 
