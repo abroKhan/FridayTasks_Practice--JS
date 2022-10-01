@@ -1,0 +1,91 @@
+@font-face {
+    src: url(./Fonts/GreatVibes-Regular.ttf);
+    font-family: 'handwritting';
+}
+
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: .5s;
+}
+
+body {
+    position: relative;
+    max-width: 100%;
+    min-height: 100vh;
+    background: url('./Background_Img.jpg') no-repeat center center / cover;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tasks__heading {
+    font-family: 'handwritting';
+    color: #ffac13;
+    font-size: 2.5rem;
+    letter-spacing: 4px;
+    text-align: center;
+    margin-bottom: .5em;
+}
+
+.tasks__container {
+    min-width: 300px;
+    background: #746d6d63;
+    color: #c1a9a9;
+    border-radius: 10px;
+    padding: 1.5em 2em .5em 2em;
+}
+
+.task__content {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #FFF;
+    padding-bottom: .5em;
+    margin-bottom: .5em;
+}
+
+.task__content:nth-child(7) {
+    border: none;
+    padding-bottom: 0;
+}
+
+.task__content .toggle {
+    position: relative;
+    width: 30px;
+    height: 12px;
+    background: white;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.task__content .toggle .circle {
+    position: absolute;
+    top: -2px;
+    left: -1px;
+    width: 18px;
+    height: 18px;
+    background-color: #ffac13;
+    border-radius: 50%;
+}
+
+.task__content .toggle.active .circle {
+    left: 15px;
+}
+
+@media (min-width : 550px) {
+    .tasks__container {
+        min-width: 400px;
+    }
+}
+
+@media (min-width : 768px) {
+    .tasks__container {
+        min-width: 550px;
+    }
+}
